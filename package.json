@@ -1,0 +1,40 @@
+{
+  "name": "koajs-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eslint/create-config": "^0.1.2",
+    "@koa/cors": "^3.1.0",
+    "chalk": "4.1.2",
+    "koa": "^2.13.4",
+    "koa-404-handler": "^0.1.0",
+    "koa-better-error-handler": "^7.0.1",
+    "koa-body": "^4.2.0",
+    "koa-compress": "^5.1.0",
+    "koa-helmet": "^6.1.0",
+    "koa-jwt": "^4.0.3",
+    "koa-pino-logger": "^4.0.0",
+    "koa-router": "^10.1.1",
+    "pino-pretty": "^7.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^14.2.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "prettier-eslint": "^13.0.0"
+  },
+  "nodemonConfig": {
+    "quiet": true
+  }
+}
