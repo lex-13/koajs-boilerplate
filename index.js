@@ -9,7 +9,9 @@ async function bootstrap() {
 }
 
 bootstrap()
-  .then((server) => console.log(`🚀 Server listening on port ${server.address().port}!`))
+  .then((server) =>
+    console.log(`🚀 Server listening on port ${server.address().port}!`)
+  )
   .catch((err) => {
     setImmediate(() => {
       console.error('Unable to run the server because of the following error:');
